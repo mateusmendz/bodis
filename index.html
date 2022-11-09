@@ -11,6 +11,10 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h3 id="user"></h3>
+          <br>
+          <h3 id="data"></h3>
+          <br>
+          <h3 id="hora"></h3>
         </div>
       </div>
     </div>
@@ -20,6 +24,10 @@
     <script type="text/javascript">
       
       document.getElementById("user").innerHTML =  window.navigator.userAgent
+
+      document.getElementById("data").innerHTML =  new Date().toLocaleDateString();
+
+      document.getElementById("hora").innerHTML =  new Date().toLocaleTimeString();
     
     </script>
     
